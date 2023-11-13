@@ -23,10 +23,10 @@ Before you begin, ensure you have the following installed:
 
     b. Update the `backendUrl` variable with the URL of your C# backend server.
 
-        ```csharp
+```csharp
         // BackendConnector.cs
         private string backendUrl = "http://your-csharp-backend-url.com";
-        ```
+```       
 
 ## UI Integration
 
@@ -44,19 +44,19 @@ Before you begin, ensure you have the following installed:
 
     a. In your UI script (e.g., `UIController.cs`), add a reference to the `BackendConnector` script and handle UI events by calling backend methods.
 
-        ```csharp
-        // UIController.cs
-        public class UIController : MonoBehaviour
-        {
-            public BackendConnector backendConnector;
-
-            public void OnButtonClick()
-            {
-                // Example: Call a backend method when a button is clicked
-                backendConnector.SendDataToBackend("Hello from UI!");
-            }
-        }
-        ```
+ ```csharp
+    // UIController.cs
+    public class UIController : MonoBehaviour
+    {
+    public BackendConnector backendConnector;
+    
+    public void OnButtonClick()
+    {
+        // Example: Call a backend method when a button is clicked
+        backendConnector.SendDataToBackend("Hello from UI!");
+    }
+    }
+ ```
 
 ## Communication Flow
 
